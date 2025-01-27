@@ -1,0 +1,4 @@
+3 type of access modifier - 
+1. private (by default)   -  only accessed inside class
+2. public
+3. protected

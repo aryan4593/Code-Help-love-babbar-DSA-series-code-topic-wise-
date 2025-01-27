@@ -1,0 +1,47 @@
+bool binarySearch (int *arr, int s, int e,int ele){
+     if (s>e)
+        return false;  //k1
+     int mid = s+(e-s)/2;
+    if (arr[mid ]==ele)
+        return true;  //k2
+   
+    if (arr[mid]<ele)
+        return (arr,mid+1,e,ele);
+    
+    if (arr[mid]>ele)
+       return binarySearch(arr,s,mid-1,ele);   
+}
+
+F(n)= K + F(n/2)
+
+T(n)= k1+k2 + T(n/2)
+T(n)= k + T(n/2)
+T(n/2)= k + T(n/4)
+T(n/4)= k + T(n/8)
+.
+.
+.
+.
+T(2)= k+ T(1)
+T(1)= k
+
+add 
+T(n)= a*k           
+
+for a -
+n --> n/2-->n/4-->....-->1      
+
+n/2^a =1
+n=2^a
+log n = a log2
+so 
+a ~= log n 
+
+
+SO T(n)=log n    ..neglate k constant
+
+
+space complexity -
+one func call is taking memory of constant space K
+so total calls = log n
+so space complexity = O(log n)

@@ -1,0 +1,20 @@
+Kahn's Algorithm for Topological Sorting:
+
+we use BFS here
+
+    2
+  /   \
+1       > 5 -->4
+  \   /
+    3
+
+adj list - 
+1 -> 2 , 3
+2 -> 5
+3 -> 5
+4 -> 
+5 -> 4
+
+step 1 - find in Degree of all nodes
+step 2 - insert all element with 0 indegree in queue
+step 3 - perform bfs and processing decrease indegree of neb by 1 as we have removed it's parent

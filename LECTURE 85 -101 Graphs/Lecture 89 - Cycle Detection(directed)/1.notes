@@ -1,0 +1,32 @@
+
+
+              -> 7
+             /   ^
+1 --> 2 --> 3    |
+      |      \   |
+      v       -> 8 
+      4
+    /   ^
+  v      \
+  5  -->  6
+
+
+adj list 
+
+1 -> 2
+2 -> 3, 4
+3 -> 7,8
+4 -> 5
+5-> 6
+6 -> 4
+7 ->
+8 -> 7
+
+
+using DFS
+we can't use same logic as we used for undirected graph
+
+we have to creaate another data structure named DFS visited which will track if dfs is called for a given node 
+if we're calling dfs for a node which have already called then cycle do exists
+
+catch - when it comes back we have to backtrack dfs call back to 0

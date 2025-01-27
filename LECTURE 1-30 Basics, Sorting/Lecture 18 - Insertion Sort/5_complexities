@@ -1,0 +1,5 @@
+space -  O(1)
+
+total comparisons - 1+2+3+...+(n-1) == (n)(n-1)/2 = n^2
+
+best case - alredy sorted - O(n)

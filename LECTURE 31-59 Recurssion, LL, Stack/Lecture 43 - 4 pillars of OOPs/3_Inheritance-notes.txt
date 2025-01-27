@@ -1,0 +1,70 @@
+ Private member of super class is not be inherited
+
+ protected is similar to Private, but child class can access it (it can be inherited)
+
+
+
+Types of Inheritance - 
+Single
+Multi level
+Multiple
+Hybrid
+Hierarchical
+
+
+1. Single Inheritance -
+        class A 
+           ^
+           |
+        class b
+
+2. Multilevle Inheritance -
+        class A 
+           ^
+           |
+        class b
+           ^
+           |
+        class c
+           ^
+           |
+        class d
+
+3. Multiple Inheritance -
+        class A       class b
+           ^              ^
+           |.....   ..... |
+                 ^
+                 |
+               class c
+
+
+4. Hierarchical Inheritance -
+   one class serve as parent class for more than one class
+
+            class a
+               ^
+               |
+         .....    .......
+         ^              ^
+        class b      class c
+
+5. Hybrid Inheritance -
+combination of more than one type of Inheritance
+            class a
+               ^
+               |
+         .....    .......
+         ^              ^
+        class b      class c
+           ^              ^
+           |.....   ..... |
+                 ^
+                 |
+               class d
+
+
+* Inheritance ambiguity 
+what if we inherited 2 classes and both have functioin with same name
+solutio use  ::
+obj.A::func

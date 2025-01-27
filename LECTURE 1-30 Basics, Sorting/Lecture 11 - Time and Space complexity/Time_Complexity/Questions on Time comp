@@ -1,0 +1,7 @@
+functios f(n)=           Big(O)
+
+2n^2 + 3n               O(n^2)                          #Igonre lower degree and constants
+4n^4+3n^3               O(n^3)
+n^2 + log n             O(n^2)
+f(n)=  12001            O(1)
+(n+4)/4                 O(n)

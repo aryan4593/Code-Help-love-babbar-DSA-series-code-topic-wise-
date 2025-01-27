@@ -1,0 +1,58 @@
+which contain cycle
+
+A --> B --> C
+^          |
+|          v
+E <-- D <-- F
+
+
+
+
+acyclic graph
+A ----->D
+|       ^
+v       |
+B  -->  C
+
+
+way of representing graphs -> 1.Adjacancy matrix
+                           -> 2. Adjacancy list
+
+1.matrix    
+    2d matix which show if it is ' row' connected to 'col' or not
+
+    
+    acyclic graph
+    A ----->D
+    |       ^
+    v       |
+    B  -->  C
+
+       Adjacency Matrix for acyclic graph:
+
+           A  B  C  D
+        A  0  1  0  1
+        B  0  0  1  0
+        C  0  0  0  1
+        D  0  0  0  0 
+
+
+2. Adjacancy list 
+
+Graph with 5 nodes:
+
+A --> B --> C
+|     |     |
+v     v     v
+D --> E     F
+
+Adjacency List for the graph:
+
+A: [B, D]
+B: [C, E]
+C: [F]
+D: [E]
+E: []
+F: []
+
+we can implement adj list by using a map <int  ,  list<nodes>  >

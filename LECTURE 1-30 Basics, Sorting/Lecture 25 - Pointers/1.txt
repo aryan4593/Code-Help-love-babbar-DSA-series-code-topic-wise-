@@ -1,0 +1,11 @@
+Pointers in cpp
+
+int num =5;     creats a block of memory of xyz address
+there is symbol table in memory which will map 
+        num-->xyz(address)
+
+        int *p;  means p is pointer to int
+
+        ex. char ch='a';
+        char *p = &a;
+        * is dereference operator

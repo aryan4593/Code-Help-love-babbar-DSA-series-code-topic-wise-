@@ -1,0 +1,11 @@
+
+    space complexity = O(1)\
+
+    Time complexity = n + (n-1) + (n-2) + . ...+ 1  = n(n-1)/2 = O(n^2)
+
+    Best-cae -->already sorted = O(n^2)
+    worst case --> O(n^2)
+
+
+Use case :-
+ for smallerr size of array,vector

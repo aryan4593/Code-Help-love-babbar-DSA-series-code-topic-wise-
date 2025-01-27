@@ -1,0 +1,4 @@
+Data structure which flollows first in first out (FIFO) 
+
+ex. push 1,5,7,9,12
+    pop ->first 1 will be out

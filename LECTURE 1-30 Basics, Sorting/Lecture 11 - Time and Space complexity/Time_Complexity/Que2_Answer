@@ -1,0 +1,6 @@
+for nested loop --> O(n^2)
+for second loop --> O(n)
+
+so O(n^2)+O(n)
+
+so final complexity = O(n^2)

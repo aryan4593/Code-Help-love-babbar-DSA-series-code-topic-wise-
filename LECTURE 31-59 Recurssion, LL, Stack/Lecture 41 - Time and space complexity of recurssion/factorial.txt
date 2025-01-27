@@ -1,0 +1,39 @@
+int fact (int n){
+    //base case
+    if (n==0)
+        return 1;    // time complexity of if - k1(const time)
+
+    return n * fact(n-1);
+    //const time k2 reqd for multiplication 
+}
+
+1. try writing recurrance relation -
+    f(n)=n*f(n-1)
+
+T(n)=k1+k2+ T(n-1)  
+T(n)  =k + T(n-1)  
+T(n-1)=k + T(n-2)  
+T(n-2)=k + T(n-3)  
+T(n-3)=k + T(n-4)
+.
+.
+.
+T(1)= k+ T(0)
+T(0)=k1         //base case
+
+add -->
+T(n)+T(n-1)+...+T(0) = kn + T(n-1)+T(n-2)+...+T(0)+k1;
+cut
+so T(n)= kn +k1;
+neglate constants
+so T(n) = n
+
+
+
+
+
+space complexity -Explanation of Space Complexity
+Recursive Call Stack: When factorial(n) is called, it will call factorial(n - 1), which in turn calls factorial(n - 2), and so on, until factorial(1) is called. Each call adds a frame to the call stack.
+Number of Frames: The total number of frames pushed onto the call stack is equal to n. This is because there are n recursive calls from factorial(n) to factorial(1).
+Space per Frame: Each frame in the call stack requires a constant amount of space for the function's parameters, return address, and local variables.
+Total Space Complexity: Since there are n frames and each frame requires constant space, the total space complexity is O(n).

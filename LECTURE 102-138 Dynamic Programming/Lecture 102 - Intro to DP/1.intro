@@ -1,0 +1,17 @@
+Those who forgets the path are condemned to repeat it
+
+1.Top Down approach  -> recurssion + Memoization
+2.Bottom Up approach -> Tabulation
+
+when to apply dp?
+when we can find optimal solution of a problem using it subProblem
+and we should also have overlapping subProblem in it
+
+Memoization is saving value 
+
+
+
+Tabulation steps
+0th step - create dp array
+write base case 
+convert recursive call into normal dp calls see Tabulation.cpp

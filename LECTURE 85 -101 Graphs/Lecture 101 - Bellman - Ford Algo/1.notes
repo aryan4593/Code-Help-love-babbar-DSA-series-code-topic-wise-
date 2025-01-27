@@ -1,0 +1,38 @@
+Dijekstr'as algo don't work for -ve edges
+
+that's why we hav this : Bellman Ford Algorithm
+
+condition - graph shouldn't have -ve cycle
+
+      A
+     ^ \
+  6 /   \ -12
+   /     v
+   B <--- C
+      -8
+
+
+B->C = -6
+but when u traverse again i.e BACBAC dist keep getting less -20,-28... so on
+this is negative cycle
+
+We can find negative cycle using this Bellman ford algo
+
+this algo is for directed graph
+
+
+
+
+
+we have to apply n-1 times for all edges
+
+if dist[u] + wt < dist [v]
+    then dist [v] = dist[u] + wt ;
+
+
+then apply formula one more time ,
+here if any dist gets updated means negative cycle exists in graph 
+
+
+
+complexity V * E

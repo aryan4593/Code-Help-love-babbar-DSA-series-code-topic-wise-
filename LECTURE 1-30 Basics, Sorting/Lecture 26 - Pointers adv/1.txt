@@ -1,0 +1,12 @@
+int arr[10];        means 40 b memory allocated
+| | | | | | | | | | |
+^
+'
+'
+array name means adress of first memory block
+
+
+How array works internally-
+
+arr[i] means *(arr+i)               this symbol table can not be changed
+this can also written as i[arr]=*(i+arr)    

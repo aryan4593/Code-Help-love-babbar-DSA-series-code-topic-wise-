@@ -1,0 +1,4 @@
+using BFS
+
+we find parent of every nodes and from it , we trace back to the node we want
+bfs stores it in shortest way that's why it will be the answer

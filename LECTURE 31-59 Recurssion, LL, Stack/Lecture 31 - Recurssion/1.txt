@@ -1,0 +1,20 @@
+when a function calls itself is known as recurssion
+
+if big/complex problem solution is depend on same problem's small solution
+ex. problem - 2^n
+2^n = 2*2^n-1
+f(n)=2*f(n-1)       ..recurssive relation
+
+factorial - 
+5! = 5 * 4!
+    4!=4*3!
+    3! = 3*2!
+    2! = 2*1!
+    1!= 1*0!
+    0! = 1  we know this and it is called as base case in recursssion
+f(n)=n* f(n-1);
+
+base case in prev ex - 2^0 =1;
+
+
+#note - writing return in base case is mandatory

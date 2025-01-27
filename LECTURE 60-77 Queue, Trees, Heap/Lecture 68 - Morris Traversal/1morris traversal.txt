@@ -1,0 +1,118 @@
+T.c = O(N) 
+S.C = O(1)
+
+we create temprary link to traverse
+Algo ->
+
+    current = root
+    while(root){
+        if left not exist 
+            visit current  
+            current = current->right
+
+        else 
+            predecessor = find (curr)    //means ek left jao aur right jate raho
+            if(!pred.right) pred->right = curr
+            curr = curr.left
+
+            else 
+                pred->right = null
+                visit curr
+                curr = curr.right
+    }
+
+
+
+//it prints in order
+
+struct TreeNode {
+    int val;
+    TreeNode *left, *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
+Consider the binary tree:
+       1
+      / \
+     2   3
+    / \
+   4   5
+      / \
+     6   7
+
+
+void morrisTraversal(TreeNode* root) {
+    TreeNode* current = root;
+    while (current) {
+        if (!current->left) {
+            cout << current->val << " ";
+            current = current->right;
+        } 
+        else {
+            TreeNode* predecessor = current->left;
+            while (predecessor->right  && predecessor->right != current) {
+                predecessor = predecessor->right;
+            }
+            if (!predecessor->right) {
+                predecessor->right = current;
+                current = current->left;
+            } else {
+                predecessor->right = nullptr;
+                cout << current->val << " ";
+                current = current->right;
+            }
+        }
+    }
+}
+Example:
+
+Consider the binary tree:
+       1
+      / \
+     2   3
+    / \
+   4   5
+      / \
+     6   7
+
+Step-by-step Morris Traversal:
+
+1. Start at root (1):
+   - Current = 1
+   - Left exists, find predecessor (5)
+   - Set predecessor's right to current (5->right = 1)
+   - Move current to left (Current = 2)
+
+2. Current = 2:
+   - Left exists, find predecessor (4)
+   - Set predecessor's right to current (4->right = 2)
+   - Move current to left (Current = 4)
+
+3. Current = 4:
+   - Left does not exist
+   - Visit 4
+   - Move current to right (Current = 2)
+
+4. Current = 2 (after visiting 4):
+   - Predecessor's right is current (4->right = 2)
+   - Set predecessor's right to null (4->right = null)
+   - Visit 2
+   - Move current to right (Current = 5)
+
+5. Current = 5:
+   - Left does not exist
+   - Visit 5
+   - Move current to right (Current = 1)
+
+6. Current = 1 (after visiting 5):
+   - Predecessor's right is current (5->right = 1)
+   - Set predecessor's right to null (5->right = null)
+   - Visit 1
+   - Move current to right (Current = 3)
+
+7. Current = 3:
+   - Left does not exist
+   - Visit 3
+   - Move current to right (Current = null)
+
+Traversal complete. Output: 4 2 5 1 3

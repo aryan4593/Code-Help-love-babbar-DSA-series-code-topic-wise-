@@ -1,0 +1,10 @@
+Deapth first search
+
+0 -- 4 -- 2
+     |    |
+     1    |
+     |    |
+     5 -- 3
+
+BFS - 0 4 1 2 5 3
+DFS - 0 4 2 3 5 1 recursive calls 

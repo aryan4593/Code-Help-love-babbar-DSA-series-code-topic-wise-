@@ -1,0 +1,14 @@
+array - |3|5|1|8|2|4|   partition
+    chose 3; place it at right place
+        |5|1|3|8|2|4|
+        place elements such that wrt 3, left side<3>right side
+        |1|2|...3...|8|5|4|
+
+
+|   |   |...    a   ...|    |   |
+  <a                       >a
+
+
+    
+
+    

@@ -1,0 +1,25 @@
+Sieve of Eratothnces :- 
+let n =20
+1||   2   3   4   5   6   7   8   9   10    this is search space
+11  12  13  14  15  16  17  18  19  ||20
+
+1. mark every no. as prime no.
+so 2 is prime no. but all no. comes in 2 table will be marked as non- prime 
+so search space :
+2   3   5   7   9   11  13  15  17  19  
+
+same for 3;
+2   3   5   7   11  13  17  19
+
+same goes for all;
+
+JO JO table me aa rha hai usko non prime mark karo
+
+
+
+complexity - 
+n - total
+(n/2+n/3+n/4.....)      ....Harmonic progression
+= Log(log n)
+
+so complexity = O(n+ log(log n))

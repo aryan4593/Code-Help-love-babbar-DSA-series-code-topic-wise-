@@ -1,0 +1,25 @@
+        8
+       / \
+      3   10
+     / \    \
+    1   6    14
+       / \   / 
+      4   7 13
+
+    left side of tree is less than root node and right is bigger
+    applicable for every root node
+
+    ex 10,8,21,7,27,5,4,3
+
+
+        10
+       /  \
+      8    21
+     /    /  \
+    7    27   5
+   /          /
+  4          3
+
+
+
+  //inorder of BST is sorted

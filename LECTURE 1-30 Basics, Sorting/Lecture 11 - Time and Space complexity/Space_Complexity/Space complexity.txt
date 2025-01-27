@@ -1,0 +1,24 @@
+It is the amount of space
+taken by algorithm to run as a function of length of the input
+
+#check memory taken for space complexity
+
+
+for making amy variable --> O(1)
+
+ex. int arr[5]={2,3,3,2,58} --> O(n)
+
+ex.2 int n;
+     cin>>n;
+     vector<int> V(N)  --> o(N)
+
+ex.3 
+     for (0-n){
+          vector <int> v(n);      --> O(n)
+
+          for (0-n){
+
+          }
+     }
+
+at any instant of time we get n block of memories so space complexity is O(n)

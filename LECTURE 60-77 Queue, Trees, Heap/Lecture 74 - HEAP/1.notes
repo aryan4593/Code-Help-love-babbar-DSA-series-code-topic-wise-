@@ -1,0 +1,62 @@
+heap is data structre that is complete binary tree and comes with heap order property
+CBt - Except last level every level is completely filled
+    - and it is filled from left side
+
+    Complete Binary Tree:             
+            1                                           
+          /   \
+         2     3
+        / \   / 
+       4   5 6   
+      Not complete:
+
+            1                                           
+          /   \
+         2     3
+        / \     \  
+       4   5     6
+
+
+In complete binary tree leaf node lies in range (n/2 + 1) -> nth  index
+
+2 types of heap -> max heap == any nodes is bigger than its child
+                   min heap == any node is smaller than its child
+
+
+Max Heap for 60, 50, 30, 20, 40:
+insertion in heap  (index) 
+                            60(1)
+                          /    \
+                        50 (2)   40 (3)
+                       /  \
+                   (4)30   20 (5)
+
+heap implementation n array from
+|x|60|50|40|30|20|
+
+if node is at ith index, then 
+    left child = 2 * i;
+    right child = 2*i + 1;
+    parent = i/2;
+
+ex. insert 55;
+step 1-> add 55 at end 
+|x|60|50|40|30|20|55|
+ 0  1  2  3  4  5  6 
+
+ 
+step 2->take it to its correct position     (check it from parent)
+    parent = 6/2 = 3
+        55>40 so swap it
+|x|60|50|55|30|20|40|
+ 0  1  2  3  4  5  6 
+     
+     parent 3/2 = 1;
+     60>55 coorect so keep it 
+
+                            60(1)
+                          /       \
+                        50 (2)      55 (3)
+                       /  \          /
+                   (4)30   20 (5)   40 (6)
+

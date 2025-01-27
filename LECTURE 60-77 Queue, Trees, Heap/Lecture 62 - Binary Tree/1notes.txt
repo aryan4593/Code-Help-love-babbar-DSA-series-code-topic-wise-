@@ -1,0 +1,18 @@
+what?
+Non linear data structur
+one node can be connecteed to multiple node
+
+basic terms 
+1. node - entity of tree
+    node{
+        int data;
+    }
+
+2.Root - top node of tree
+3.child - parent
+4.siblings - nodes with same parent
+5.ancestor - all parent and their parent and their parent...
+6. decended - child,child's child,...
+7. leaf - node withoud child 
+
+Binary tree - except leaf node every node HAVE  2 childs

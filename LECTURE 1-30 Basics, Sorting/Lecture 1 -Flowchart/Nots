@@ -1,0 +1,5 @@
+Pseudocode --> way of genric reprresenting code
+    ex. sum of 2 no.s
+    --> read 2 no. a and b
+    --> sum = a+b
+    --> print sum

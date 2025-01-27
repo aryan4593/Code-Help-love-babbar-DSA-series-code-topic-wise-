@@ -1,0 +1,70 @@
+lets say we've array 
+|v1|v2|v3|v4|v5|v6||v7|
+ 0  1  2  3   4  5  6
+let say indeces are key and v1 v2... are values
+
+but how will we map string like "aryan "to index
+
+we use Hash function
+        -> Hash code    --> convert string to integer so that arr can store value
+        -> compression function -->it will take integer to range of array 
+
+Hash code ->
+    identity function
+      i/p  ->   |H.C|   -> i/p   //this Hash code gives input back
+
+
+      i/p  ->   |H.C|   -> integer   //this Hash code gives integer as output   //lets say sum of ascci value
+
+why hashcode -> for conversion
+            ->uniform distrubution  ex. aryan, arayn can collide and both can get same block this is c/d collision
+                                        hashcode avoids this by distrubuting uniformly
+
+            ->collision handelling 
+                ->open hashing -> put both aryan and arayn at same place but at 
+                                that place store a head 
+                                ex. | | | |Head| | | | |
+                                            ^
+                                            |
+                                           |v1| -> |v2|
+                    also called as separate chaining
+
+                ->open addressing -> if request comes for already occupied place ,it won't store it 
+                                     and will store iqt at different place which is non occupied
+                                     that place depends on a function
+                                     | | | | v1| | | | v2| |
+                                     Hi(a) = h(a) + fi(a)   ith attempt me kaha pr place krna hai
+                                     subtype - 
+                                        linear probing fi = i
+                                        Hi(a) = h(a) + i;
+                                        Quadratic probing fi = i^2;
+                                        Hi(a) = h(a) +i^2
+
+
+
+Complexity analysis - 
+let n total no. of words
+k is length of word
+
+H.C complexity should be O(K);
+but in general case no. of words >>>>> length of word
+so n>>>>>k
+O(K) ~= O(1)
+
+
+but what if everything is stored in linked list so (see line 26 ex) so complexity shud be O(n)
+but thats doesnnt happens here
+
+let n -> no of entries in map
+b -> no of boxes available
+
+hash map ensures that
+no of entries in a box = n/b  -> also cd as load factor
+    general rule n/b < 0.7
+
+    if n is increasing, we have to increasee b also to maintain ratio 
+    thats why we have to do rehashing
+
+
+Hash table
+A Hash table is defined as a data structure used to insert, look up, and remove key-value pairs quickly. It operates on the hashing concept, where each key is translated by a hash function into a distinct index in an array. The index functions as a storage location for the matching value. In simple words, it maps the keys with the value.

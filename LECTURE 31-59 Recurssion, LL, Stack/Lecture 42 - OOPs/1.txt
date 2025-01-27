@@ -1,0 +1,2 @@
+technique of programming revolves aroound objects
+object is type of entity which have its own 1 property and 2. behaviour

@@ -1,0 +1,10 @@
+reference variable - same memory different name of memory block
+
+ex. int i =5;
+int &j = i;   //reference variable 
+
+
+
+
+use of stack memory - static allocation
+use of heap memory - dynamic memory allocation

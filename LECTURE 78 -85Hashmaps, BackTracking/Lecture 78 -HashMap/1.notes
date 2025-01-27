@@ -1,0 +1,43 @@
+It is useful because it have very less T.C for insert,search etc
+
+it contains key value pairs
+
+2 types of map -> ordered and unordered
+        orderd hav O(log n) complexities where unordered have O(1)
+Hashtable is used to implement it unordered map
+
+/*
+ * Hashing is a technique used to uniquely identify a specific object from a group of similar objects.
+ *
+ * Hashing involves mapping data to a fixed size using hash functions. The output, known as a hash code, is typically a number.
+ *
+ * Properties of a good hash function:
+ * - It should be fast to compute.
+ * - It should distribute keys uniformly across the hash table.
+ * - It should minimize collisions (where two keys hash to the same index).
+ *
+ * Common hash functions include division-remainder, multiplication, and universal hashing.
+ *
+ * Applications of hashing:
+ * - Implementing data structures like hash tables, hash maps, and sets.
+ * - Cryptography for secure data transmission.
+ * - Data retrieval and storage optimization.
+ */
+Hashing is a technique used to uniquely identify a specific object from a group of similar objects.
+
+Hashing involves mapping data to a fixed size using hash functions. The output, known as a hash code, is typically a number.
+
+Properties of a good hash function:
+- It should be fast to compute.
+- It should distribute keys uniformly across the hash table.
+- It should minimize collisions (where two keys hash to the same index).
+
+Common hash functions include division-remainder, multiplication, and universal hashing.
+
+Applications of hashing:
+- Implementing data structures like hash tables, hash maps, and sets.
+- Cryptography for secure data transmission.
+- Data retrieval and storage optimization.
+
+
+

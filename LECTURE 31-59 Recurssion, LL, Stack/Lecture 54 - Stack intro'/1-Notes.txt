@@ -1,0 +1,32 @@
+Ex. plate stack
+
+LIFO - last in first out
+
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+----------------
+
+
+
+operations - 
+push - insert
+pop - remove
+peak - upar wala element
+
+
+
+for STL - stack<int> s;
+        s.push=()
+        s.pop();
+        s.empty();

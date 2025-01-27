@@ -1,0 +1,24 @@
+it is type of data structure
+
+worse case of hashmap is o(k) to implement dict
+
+TrieNode{
+    char data;
+    TrieNode* children[26];
+    bool isTerMinalNode;
+}
+
+
+why hashmap is better to store?
+ex. i have to store  ARE, ARM , ARENA , ARDENO
+    for hasmap it will take extra space as it will create mapping for every word but for TrieNode
+
+    A
+    |
+    R
+    | \  \
+    E* M* D 
+    |     |
+    N     E
+    |
+    A

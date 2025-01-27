@@ -1,0 +1,13 @@
+What is selection sort?
+
+--> diffeent rounds or passes
+--> in every round we took smallest element and place it in right position
+
+
+                         arr =  64,  25, 12, 22, 11
+Round 1   i=0; swap (64,11)     11,  25, 12, 22, 64          // as 11 is min of arr (i to n)
+round 2   i=1;  swap(12,25)     11,  12, 25, 22, 64         // as 12 is min of arr (i to n)
+round 3 i=2;    swap(22,25)     11,  12, 22, 25, 64             .....
+
+total round = n-1
+

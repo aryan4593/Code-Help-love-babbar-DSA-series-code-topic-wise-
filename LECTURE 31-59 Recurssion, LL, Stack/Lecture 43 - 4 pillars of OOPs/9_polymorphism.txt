@@ -1,0 +1,8 @@
+poly mans many , morph means form
+
+2 types -
+compile time polymorphism   -->function overloading, operator overloading
+run time polymorphism   -->
+
+
+// we can't overload function by changing its return type 

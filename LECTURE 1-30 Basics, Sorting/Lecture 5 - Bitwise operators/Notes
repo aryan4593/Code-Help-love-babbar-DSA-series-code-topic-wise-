@@ -1,0 +1,6 @@
+bitwise operator only works for bits not numbers 
+
+AND  &
+OR  |
+NOT ~
+XOR ^                                   11=! 1, same as or.

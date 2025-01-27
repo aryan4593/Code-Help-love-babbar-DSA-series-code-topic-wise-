@@ -1,0 +1,9 @@
+Strongly connected component, every node can reach to eevry node of component
+
+
+Algo - 
+
+Topo sort
+Transverse  graph (a -> b)' = (a <- b)
+
+apply dfs

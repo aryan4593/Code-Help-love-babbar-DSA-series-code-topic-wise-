@@ -1,0 +1,71 @@
+1. What is const Keyword in C++?
+The const keyword in C++ is used to define variables, pointers, member functions, and function arguments as constants. This means their values cannot be modified after they are initialized. It is a way to ensure that certain data or functions remain unchanged throughout the program.
+
+2. How Do We Use const Keyword in Object Creation?
+When creating objects in C++, you can use the const keyword to ensure that the object remains unchanged. Here’s an example:
+
+cpp
+Copy code
+class MyClass {
+public:
+    void display() const {
+        // display code
+    }
+};
+
+int main() {
+    const MyClass obj;  // obj is a constant object of MyClass
+    obj.display();      // can only call const member functions
+    return 0;
+}
+In this example, obj is a constant object of MyClass, meaning you can only call const member functions on it.
+
+3. How Do We Use const in Function?
+The const keyword can be used in functions in several ways:
+
+Const Function Arguments: Ensures the arguments passed to the function cannot be modified inside the function.
+
+cpp
+Copy code
+void func(const int a) {
+    // a cannot be modified inside this function
+}
+Const Member Functions: Indicates that the member function will not modify the object on which it is called.
+
+cpp
+Copy code
+class MyClass {
+public:
+    void display() const {
+        // This function cannot modify any member variables
+    }
+};
+Const Return Values: Ensures the returned value cannot be modified by the caller.
+
+cpp
+Copy code
+const int getValue() {
+    return 42;
+}
+4. What is Initialization List?
+In C++, an initialization list is used in constructors to initialize class members before the constructor body executes. This is particularly useful for initializing const members, reference members, and for calling base class constructors.
+
+Example:
+
+cpp
+Copy code
+class MyClass {
+private:
+    const int x;
+    int y;
+public:
+    MyClass(int val1, int val2) : x(val1), y(val2) {
+        // Constructor body
+    }
+};
+
+int main() {
+    MyClass obj(5, 10);
+    return 0;
+}
+In this example, x is a const member and must be initialized using an initialization list. y is also initialized in the initialization list for consistency and efficiency.

@@ -1,0 +1,12 @@
+strings - oen dimensional charecter array (in short)
+need - to store multiple charecter
+
+declaration - 
+char name  [10];
+
+ input -cin>>name;      agter input, at last bloc a null charecter is stored (\0)
+ Imp - cin will stop execution after space,TAb\t,ENTER\n
+
+ output: cout<<name;
+
+

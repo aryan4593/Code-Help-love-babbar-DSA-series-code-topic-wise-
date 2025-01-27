@@ -1,0 +1,50 @@
+void mergeSort(int *arr, int s, int e){
+    if (s>=e) 
+        return; k1
+    int mid = s+(e-s)/2; k2
+     mergeSort(arr,s,mid);  T(n/2)
+     mergeSort(arr,mid+1,e); T(n/2)
+     merge(arr,s,e); k3
+    
+}
+
+
+steps - break in 2 array
+        solve l and r using recursion
+        new array - merge
+
+T(n)= k1+k2+T(n/2)+T(n/2) +k3*n + k4*n.... k3*n for merging array of n size k4*n for copying array into original
+                                into 
+T(n)= k + 2T(n/2)+ nk5          
+T(n)= 2T(n/2)+ nk                1       T(n)= 2T(n/2)+ nk                                 
+T(n/2)= 2T(n/4)+ nk/2            2       2T(n/2)= 4T(n/4)+ nk
+T(n/4)= 2T(n/8)+ nk/4            4       4T(n/4)= 8T(n/2)+ nk
+.
+.
+.
+T(1)= k
+
+add 
+
+T(n)= a*(nk) 
+
+n/2^a =1
+log n = a log 2
+
+
+so T(n)= log n (n)
+so T(n)= n log n
+
+
+
+
+
+space complexity -
+
+k log(n) + n 
+ ^         ^
+        array of n is created (tho it is deleted later but maximum size is considered)
+constant space for logn call
+
+as n>> logn
+space complexity = O(n)

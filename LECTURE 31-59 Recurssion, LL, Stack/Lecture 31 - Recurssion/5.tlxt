@@ -1,0 +1,14 @@
+Tail recursion -  r.r after processing
+func {
+    |       base case    |
+    | processing         |
+    | REcursive relation |
+}
+
+
+head recursion -  r.r befre processing
+func {
+    |       base case    |
+    | REcursive relation |
+    | processing         |
+}

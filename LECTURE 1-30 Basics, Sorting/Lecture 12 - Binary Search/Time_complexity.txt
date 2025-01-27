@@ -1,0 +1,22 @@
+for time complexity , we take worst case
+
+
+let array of n size
+        after first iteration
+N/2 size
+        after 2nd iteration
+N/4 size
+                .
+                .
+                .
+                .
+        after Kth iteration where only one size
+N/(2^k)
+
+
+
+N/(2^k)=1
+so.. N = 2^K
+     Log N = k Log 2
+    
+     so compolexity is K = Log(N)

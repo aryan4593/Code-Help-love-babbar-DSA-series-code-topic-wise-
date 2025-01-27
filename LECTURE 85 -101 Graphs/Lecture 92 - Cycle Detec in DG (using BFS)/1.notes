@@ -1,0 +1,6 @@
+we know that we can find topological sort of directed acyclic graph only
+
+so we will use this to find if cycle is present or not
+means if we cant find topological sort cycle is there
+
+if cycle is present count will be same as number fo nodes else it will be less than that

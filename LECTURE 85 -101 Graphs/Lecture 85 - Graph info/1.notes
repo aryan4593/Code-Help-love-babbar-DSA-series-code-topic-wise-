@@ -1,0 +1,47 @@
+Graph is type of a data structure which is combination of nodes and edges
+
+A -- B
+|    |
+C    D -- E   -->undirected graph
+|    |
+D -- C
+
+here A,B means B,A
+
+A -> B
+|    |
+v    v
+C    D -> E   -->directed graph
+|    ^
+v    |
+D <- C
+
+A,B is true but B,A is not
+
+
+degree of D in und graph = 3 //how many nodes are connected
+
+for directed graph there is a in degree and a out degree
+ex. for D -  In degree = 2, Out degree = 1
+
+
+weighted graph -> where edges have weights
+
+A --5-- B
+|      /
+3    2
+|  /
+C --4-- D --1-- E
+
+In this weighted graph:
+- The edge between A and B has a weight of 5.
+- The edge between A and C has a weight of 3.
+- The edge between B and C has a weight of 2.
+- The edge between C and D has a weight of 4.
+- The edge between D and E has a weight of 1.
+
+
+let's suppose we have graph like first figure where weight is not give here we can assume that weight is 1
+
+
+Path -> sequence of nodes where every node exactly comes only once

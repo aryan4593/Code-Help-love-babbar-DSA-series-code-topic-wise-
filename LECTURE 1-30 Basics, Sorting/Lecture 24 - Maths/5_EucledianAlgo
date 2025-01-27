@@ -1,0 +1,3 @@
+GCD(a,b)= GCD (a-b,b)= GCD(a%b,b)
+
+hcf*lcm =a*b 

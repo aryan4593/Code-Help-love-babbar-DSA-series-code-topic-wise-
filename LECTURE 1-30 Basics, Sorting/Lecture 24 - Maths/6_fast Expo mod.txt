@@ -1,0 +1,10 @@
+(a+b)%m = a%m +b%m
+a%m - b%m = (a-b)%m
+a%m * b%m = (a*b)%m
+
+fast exponentian:
+a^b --> (a^(b/2))^2  ..... if b is even
+    --> (a^(b/2))^2 x a  ..... if b is odd
+
+ex. 2^10 = (2^5)^2
+ex. 2^11 = (2^5)^2*2

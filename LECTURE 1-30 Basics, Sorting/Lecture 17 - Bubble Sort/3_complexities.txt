@@ -1,0 +1,7 @@
+comparison in Round i = n -i
+so 1+2+3+4+...+(n-1)=(n(n-1))/2
+
+Time complexity = O(n^2)
+best case  in optimized solution = sorted arr ;  T = O(n)
+
+space complexity = O(1)

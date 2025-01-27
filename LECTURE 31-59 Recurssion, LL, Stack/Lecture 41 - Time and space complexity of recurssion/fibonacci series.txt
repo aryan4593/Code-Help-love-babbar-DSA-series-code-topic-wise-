@@ -1,0 +1,39 @@
+fib (int n){
+    if (n==0|| n==1)
+        return n; // T = k1
+    
+    return fib(n-1)+ fib (n-2)
+}
+
+f(n)= f(n-1)+ f(n-2)
+
+
+T(n)= T(n-1)+ T(n-2) +K
+T(n-1)= T(n-2) + T(n-3) +K
+T(n-2)= T(n-3) + T(n-4) +K
+T(n-3)= T(n-4) + T(n-5) +K
+T(n-4)= T(n-5) + T(n-6) +K
+.
+.
+.
+T(1) =K
+
+T(n)= T(n-2)+T(n-3)+T(n-4)+...+nK
+
+
+
+/// 2nd approach 
+
+let say one node takes k time 
+so total time is k*total nodes
+total nodes = 1+2+4+8+...+2^n-1
+            =  2^n - 1  ... sum of gp
+
+so T(n)= k (2^n-1)
+       = 2^n 
+
+
+
+
+space complexity -
+space complexity is O(n) as depth of function call  tree is n

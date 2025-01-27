@@ -1,0 +1,15 @@
+Inorder - LNR       -->first left then middle then right
+Preorder - NLR      --> middle then left then right
+postorder - LRN      --> left then right then middle
+
+L - left part me jao
+R - right part me jao
+N - Node print
+
+
+how to remembere?
+
+there is L-R in all 3;
+in Order means - N b/w  L  &&  R
+pre Order means - N before  L  && R 
+post Order means - N after  L  &&  R 

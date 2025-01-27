@@ -1,0 +1,2 @@
+O(n) + O(m)         for 2 loops
+so answer - O(m+n)

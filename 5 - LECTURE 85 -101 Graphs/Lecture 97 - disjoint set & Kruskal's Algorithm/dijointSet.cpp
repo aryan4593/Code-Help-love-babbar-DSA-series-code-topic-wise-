@@ -27,10 +27,10 @@ public:
 
         if(ultParOfU == ultParOfV) return; ///belong to same component
 
-        else if(ultParOfU < ultParOfV){
+        else if(rank[ultParOfU] < rank[ultParOfV]){
             parent[ultParOfU] = ultParOfV; //smaller will get attach to bigger
         }
-        else if (ultParOfV < ultParOfU){
+        else if (rank[ultParOfV] < rank[ultParOfU]){
             parent[ultParOfV] = ultParOfU;
         }
         
@@ -49,6 +49,7 @@ public:
             parent[ultParOfV] = ultParOfU;
             size[ultParOfV]+=size[ultParOfU];
         }
+
         else{
             parent[ultParOfU] = ultParOfV;
             size[ultParOfU]+=size[ultParOfV];
